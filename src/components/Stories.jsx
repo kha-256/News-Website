@@ -1,28 +1,19 @@
 import React from 'react'
-import { useEffect } from 'react'
+import { useGlobalContext } from '../Context'
 
 const Stories = () => {
 
-  let API = 'https://hn.algolia.com/api/v1/search?query=html'
+const {hits, nbPages,isLoading}= useGlobalContext()
 
-  const fetchDataApi = async (url) => {
-    try {
-      const res = await fetch(url);
-      const data = await res.json();
-      console.log(data)
-    } catch (error) {
-      console.log(error);
-    }
-
-  }
-
-  useEffect(() => {
-    fetchDataApi(API)
-  }, []);
-
+if(isLoading){
+  return <h1>Loading...</h1>
+}
   return (
     <>
       <h1>Welcome to Tech News Post</h1>
+      {hits.map((item)=>{
+       return <h2>{item.title}</h2>
+      })}
     </>
   )
 }
