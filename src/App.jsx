@@ -7,11 +7,11 @@ import { useGlobalContext } from './Context'
 
 function App() {
 
-  const data= useGlobalContext()
+
 
   return (
     <>
-  <div>Welcome! to News Wesbsite by {data}</div>
+  <div>Welcome! to News Wesbsite</div>
   <Search/>
   <Pagination/>
   <Stories/>
