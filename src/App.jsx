@@ -11,12 +11,12 @@ function App() {
 
   return (
     <>
-  <div>Welcome! to News Wesbsite</div>
-  <Search/>
-  <Pagination/>
-  <Stories/>
+      <div>Welcome! to News Wesbsite</div>
+      <Search />
+      <Pagination />
+      <Stories />
     </>
-    
+
   )
 }
 
