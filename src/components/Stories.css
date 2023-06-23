@@ -1,0 +1,37 @@
+.Card {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 40%;
+    padding: 25px;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.Card p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+}
+
+.Card p span {
+    color: rgb(97, 95, 95);
+}
+
+.card-button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.read-more {
+    text-decoration: none;
+    color: rgb(103, 156, 189);
+}
+
+.remove {
+    text-decoration: none;
+    color: rgb(143, 18, 18)
+}
