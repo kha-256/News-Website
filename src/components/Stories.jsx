@@ -4,7 +4,7 @@ import './Stories.css'
 
 const Stories = () => {
 
-  const { hits, nbPages, isLoading } = useGlobalContext()
+  const { hits, nbPages, isLoading, removePost } = useGlobalContext()
 
   if (isLoading) {
     return <h1>Loading...</h1>
@@ -20,7 +20,7 @@ const Stories = () => {
 
             <div className='card-button'>
               <a href={url} target='_blank' className='read-more'>Read More</a>
-              <a href='#' className='remove'>Remove</a>
+              <a href='#' className='remove' onClick={()=> removePost(objectID)}>Remove</a>
 
             </div>
           </div>
