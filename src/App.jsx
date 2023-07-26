@@ -11,9 +11,10 @@ function App() {
 
   return (
     <>
-      <div>Welcome! to News Wesbsite</div>
-      <Search />
-      <Pagination />
+    <div className='heading'>
+    <h2>Welcome! to News Wesbsite</h2>
+    </div>
+      
       <Stories />
     </>
 
