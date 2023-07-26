@@ -7,7 +7,10 @@ const Stories = () => {
   const { hits, nbPages, isLoading, removePost } = useGlobalContext()
 
   if (isLoading) {
-    return <h1>Loading...</h1>
+    return( 
+    <div className='heading'>
+      <h3 class>Loading...</h3>
+    </div> )
   }
   return (
     <>
